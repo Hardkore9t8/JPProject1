@@ -39,15 +39,15 @@ public class Main {
         products.add(m2);
         return products;
     }
-
+    // Step 16
+    // Create print method here
     public static void print(ArrayList<Product> products) {
 
         for (Product p : products) {
             System.out.println(p);
         }
     }
-    // Step 16
-    // Create print method here
+
 
 }
 

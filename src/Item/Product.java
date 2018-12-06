@@ -22,13 +22,13 @@ public abstract class Product implements Item, Comparable<Product> {
         this.name = name;
         manufacturedOn = new Date();
         setProductionNumber(currentProductionNumber);
-        serialNo = currentProductionNumber++;
+        serialNo = currentProductionNumber++;  //this was stipulated by the program requirements
         manufacturer = manufacturerOrigin;
     }
 
     @Override
     public void setProductionNumber(int productionNo) {
-        currentProductionNumber = productionNo;
+        currentProductionNumber = productionNo;//this was stipulated by the program requirements
     }
 
     @Override

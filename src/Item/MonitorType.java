@@ -1,3 +1,8 @@
+/**@Author Naldo Ash
+ * The production facility will also create portable movie players. The main difference between these and
+ * the audio players is that they contain screens.
+ * Create an enum called MonitorType that will store LCD and LED
+ */
 package Item;
 
 public enum MonitorType {

@@ -1,7 +1,6 @@
 package Item;
 
 import java.util.Scanner;
-import java.util.Scanner;
 import java.util.regex.*;
 
 public class EmployeeInfo {

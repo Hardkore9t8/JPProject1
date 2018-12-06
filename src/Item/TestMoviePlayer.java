@@ -1,6 +1,9 @@
+/**@Author Naldo Ash
+ * Create a diver class to test the functionality of the movie player.
+ */
 package Item;
 
-public class testMoviePlayer {
+public class TestMoviePlayer {
 
     public static void main(String[] args) {
         MoviePlayer mov = new MoviePlayer("LG");

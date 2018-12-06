@@ -1,6 +1,6 @@
 package Item;
 
-public class testMultimediaControl {
+public class TestMultimediaControl {
 
     public static void main(String[] args) {
         AudioPlayer player1 = new AudioPlayer("CD", "Sony");

@@ -1,6 +1,6 @@
 package Item;
 
-public class EmployeeInfoDriver {
+public class TestEmployeeInfo {
     public static void main(String args[]) {
 
         System.out.println("Test Employee Department ID");
