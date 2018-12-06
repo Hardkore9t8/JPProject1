@@ -24,9 +24,12 @@
  */
 package Item;
 
+import java.io.FileWriter;
 import java.io.IOException;
+import java.io.PrintWriter;
 import java.nio.file.Files;
 import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.ArrayList;
 
 public class ProcessFiles {
@@ -35,10 +38,17 @@ public class ProcessFiles {
     private Path p2;
     private Path p3;
 
+    public ProcessFiles() {
+        p = Paths.get("C:\\LineTests");
+        p2 = Paths.get("TestResults.txt");
+        p3 = p.resolve(p2);
+
+        CreateDirectory();
+    }
     //create CreateDirectory method
 
     private void CreateDirectory() {
-        if(Files.notExists(p)){
+        if (Files.notExists(p)) {
             try {
                 Files.createDirectory(p);
             } catch (IOException e) {
@@ -47,13 +57,23 @@ public class ProcessFiles {
             }
         }
     }
+
     //create WriteFile method
-    private void WriterFile(EmployeeInfo emp)throws IOException{
+    private void WriterFile(EmployeeInfo emp) throws IOException {
+        FileWriter writer = new FileWriter(p3.toString(), true);
+        PrintWriter printWriter = new PrintWriter(writer);
 
+        printWriter.print(emp);
+        printWriter.close();
     }
-//create WriterFile ArrayList method to hold product list
-    private void WriteFile(ArrayList<Product>products)throws IOException{
 
+    //create    WriterFile ArrayList method to hold product list
+    private void WriteFile(ArrayList<Product> products) throws IOException {
+        FileWriter writer = new FileWriter(p3.toString(), true);
+        PrintWriter printWriter = new PrintWriter(writer);
+
+        for (Product items : products) {
+            printWriter.print(items);
+        }
     }
-
 }
